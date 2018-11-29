@@ -1,13 +1,7 @@
 #!/bin/bash
-# UsnekxPHC
+# vulikata
 clear
 echo "                                                                 "
-echo "                                                                 "
-echo " _|    _|    _|_|_|  _|      _|  _|_|_|_|  _|    _|  _|      _|  "
-echo " _|    _|  _|        _|_|    _|  _|        _|  _|      _|  _|    "
-echo " _|    _|    _|_|    _|  _|  _|  _|_|_|    _|_|          _|      "
-echo " _|    _|        _|  _|    _|_|  _|        _|  _|      _|  _|    "
-echo "   _|_|    _|_|_|    _|      _|  _|_|_|_|  _|    _|  _|      _|  "
 echo "                                                                 "
 echo "                        AUTO SCRIPT                              "
 echo "                                                                 "
@@ -40,9 +34,9 @@ echo " "
 
 sudo apt-get -y update && sudo apt-get -y upgrade && apt-get install expect -y
 sudo apt-get install checkinstall build-essential -y
-wget http://www.softether-download.com/files/softether/v4.27-9666-beta-2018.04.21-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
-tar -xzf softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
-rm -rf softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
+wget http://www.softether-download.com/files/softether/v4.28-9669-beta-2018.09.11-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.28-9669-beta-2018.09.11-linux-x64-64bit.tar.gzgz
+tar -xzf softether-vpnserver-v4.28-9669-beta-2018.09.11-linux-x64-64bit.tar.gz
+rm -rf softether-vpnserver-v4.28-9669-beta-2018.09.11-linux-x64-64bit.tar.gz
 cd /root/vpnserver && expect -c 'spawn make; expect number:; send 1\r; expect number:; send 1\r; expect number:; send 1\r; interact'
 cd && mv vpnserver/ /usr/local && chmod 600 * /usr/local/vpnserver/ && chmod 700 /usr/local/vpnserver/vpncmd && chmod 700 /usr/local/vpnserver/vpnserver
 echo '#!/bin/sh
@@ -128,5 +122,5 @@ echo "Username: ${USER}"
 echo "Password: ${SERVER_PASSWORD}"
 echo "Server Password: ${SE_PASSWORD}"
 echo " "
-echo "Join us in TD's Discord Server"
-echo "Invitation link: https://discord.gg/2BCNNYg"
+echo "Join us!"
+echo "https://brvv.ml/"
